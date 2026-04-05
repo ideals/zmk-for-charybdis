@@ -31,11 +31,11 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &none      &none          &none         &none      &kp MINUS         &kp EQUAL
-&none        &none             &none         &none         &none           &none           &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none        &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &none           &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp INS           &none
-&bootloader  &none             &none         &none         &none           &none           &none      &none          &none         &none      &none             &none
-                                             &none         &none           &none           &mkp LCLK  &mkp RCLK
+&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PRINTSCREEN  &none          &none         &none      &kp MINUS         &kp EQUAL
+&none        &none             &none         &none         &none           &none           &kp HOME         &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none        &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &none           &kp LEFT         &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp INS           &none
+&bootloader  &none             &none         &none         &none           &none           &none            &none          &none         &none      &none             &none
+                                             &none         &none           &none           &mkp LCLK        &mkp RCLK
                                                            &none           &none           &none
             >;
 
