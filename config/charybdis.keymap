@@ -18,12 +18,12 @@
 
         layer_0 {
             bindings = <
-&kp GRAVE     &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3        &kp NUMBER_4      &kp N5               &kp NUMBER_6  &kp N7             &kp N8               &kp N9           &kp N0              &kp BACKSPACE
-&kp TAB       &kp Q           &kp W           &kp E               &kp R             &kp T                &kp Y         &kp U              &kp I                &kp O            &kp P               &kp BACKSLASH
-&kp CAPSLOCK  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                &kp H         &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
-&kp ESCAPE    &kp Z           &kp X           &kp C               &kp V             &kp B                &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp DELETE
-                                              &lt 1 SPACE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp EQUAL     &lt 2 RETURN
-                                                                  &mkp MB1          &mkp MB2             &kp MINUS
+&kp GRAVE     &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3        &kp NUMBER_4      &kp N5               &kp NUMBER_6  &kp N7             &kp N8               &kp N9           &kp N0              &kp MINUS
+&kp TAB       &kp Q         &kp W           &kp E               &kp R             &kp T                &kp Y         &kp U              &kp I                &kp O            &kp P               &kp BACKSLASH
+&kp CAPSLOCK  &kp A         &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                &kp H         &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
+&kp ESCAPE    &kp Z         &kp X           &kp C               &kp V             &kp B                &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp DELETE
+                                            &lt 1 SPACE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp EQUAL     &lt 2 RETURN
+                                                                &kp BACKSPACE     &kp LEFT_WIN         &kp MINUS
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -31,11 +31,11 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &none     &none          &none         &none      &kp MINUS         &kp EQUAL
-&none        &none             &none         &none         &none           &none           &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none        &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &none           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp INS           &none
-&bootloader  &none             &none         &none         &none           &none           &none     &none          &none         &none      &none             &none
-                                             &none         &none           &none           &none     &none
+&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &none      &none          &none         &none      &kp MINUS         &kp EQUAL
+&none        &none             &none         &none         &none           &none           &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none        &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &none           &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp INS           &none
+&bootloader  &none             &none         &none         &none           &none           &none      &none          &none         &none      &none             &none
+                                             &none         &none           &none           &mkp LCLK  &mkp RCLK
                                                            &none           &none           &none
             >;
 
