@@ -15,6 +15,7 @@
 / {
     macros {
         long_dash: long_dash {
+            label = "LONG_DASH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
