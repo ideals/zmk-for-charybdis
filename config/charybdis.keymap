@@ -13,6 +13,20 @@
 &mt { flavor = "tap-preferred"; };
 
 / {
+    macros {
+        long_dash: long_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LSHFT>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL &kp LSHFT>
+                , <&macro_tap &kp N2 &kp N0 &kp N1 &kp N4> // Код 2014 для длинного тире
+                , <&macro_tap &kp RET> // Нажать Enter для подтверждения
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
