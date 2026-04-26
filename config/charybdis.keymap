@@ -15,36 +15,30 @@
 / {
     macros {
         // Макрос 1: Scroll Lock + - - -
+
         long_dash: long_dash {
             label = "LONG_DASH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp SCRLCK>,
-                <&kp MINUS>,
-                <&kp MINUS>,
-                <&kp MINUS>
-                ;
+            bindings = <&kp SCRLCK &kp MINUS &kp MINUS &kp MINUS>;
         };
 
         // Макрос 2: Scroll Lock + (
+
         sl_paren_open: sl_paren_open {
             label = "LEFT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp SLCK>,
-                <&kp LPAR>; // LPAR это Shift+9
+            bindings = <&kp SLCK &kp LPAR>; // LPAR это Shift+9
         };
 
         // Макрос 3: Scroll Lock + )
+
         sl_paren_close: sl_paren_close {
             label = "RIGHT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp SLCK>,
-                <&kp RPAR>; // RPAR это Shift+0
+            bindings = <&kp SLCK &kp RPAR>; // RPAR это Shift+0
         };
     };
 
@@ -66,10 +60,10 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PRINTSCREEN  &none          &none         &none      &kp MINUS         &kp EQUAL
-&none        &none             &none         &none         &none           &none           &kp HOME         &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none        &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &none           &kp LEFT         &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp INS           &none
-&bootloader  &none             &none         &none         &none           &none           &none            &none          &none         &none      &none             &none
+&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PRINTSCREEN  &kp SCROLLLOCK  &none         &none      &kp MINUS         &kp EQUAL
+&none        &none             &none         &none         &none           &none           &kp HOME         &kp PAGE_DOWN   &kp PG_UP     &kp END    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none        &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &none           &kp LEFT         &kp DOWN        &kp UP_ARROW  &kp RIGHT  &kp INS           &none
+&bootloader  &none             &none         &none         &none           &none           &none            &none           &none         &none      &none             &none
                                              &none         &none           &none           &mkp LCLK        &mkp RCLK
                                                            &none           &none           &long_dash
             >;
