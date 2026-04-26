@@ -19,11 +19,11 @@
             label = "LONG_DASH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp SCRLCK>
-                , <&kp MINUS>
-                , <&kp MINUS>
-                , <&kp MINUS>
+            bindings =
+                <&kp SCRLCK>,
+                <&kp MINUS>,
+                <&kp MINUS>,
+                <&kp MINUS>
                 ;
         };
 
@@ -32,10 +32,9 @@
             label = "LEFT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp SLCK>
-                , <&kp LPAR>; // LPAR это Shift+9
-            label = "SL_PAREN_OPEN";
+            bindings =
+                <&kp SLCK>,
+                <&kp LPAR>; // LPAR это Shift+9
         };
 
         // Макрос 3: Scroll Lock + )
@@ -43,10 +42,9 @@
             label = "RIGHT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp SLCK>
-                , <&kp RPAR>; // RPAR это Shift+0
-            label = "SL_PAREN_CLOSE";
+            bindings =
+                <&kp SLCK>,
+                <&kp RPAR>; // RPAR это Shift+0
         };
     };
 
