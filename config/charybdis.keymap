@@ -14,31 +14,25 @@
 
 / {
     macros {
-        // Макрос 1: Scroll Lock + - - -
-
         long_dash: long_dash {
             label = "LONG_DASH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SCRLCK &kp MINUS &kp MINUS &kp MINUS>;
+            bindings = <&kp SCROLLLOCK &kp MINUS &kp MINUS &kp MINUS>;
         };
-
-        // Макрос 2: Scroll Lock + (
 
         sl_paren_open: sl_paren_open {
             label = "LEFT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLCK &kp LPAR>; // LPAR это Shift+9
+            bindings = <&kp SCROLLLOCK &kp LPAR>; // LPAR это Shift+9
         };
-
-        // Макрос 3: Scroll Lock + )
 
         sl_paren_close: sl_paren_close {
             label = "RIGHT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLCK &kp RPAR>; // RPAR это Shift+0
+            bindings = <&kp SCROLLLOCK &kp RPAR>; // RPAR это Shift+0
         };
     };
 
