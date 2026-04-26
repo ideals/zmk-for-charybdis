@@ -67,12 +67,12 @@
 
         layer_2 {
             bindings = <
-&trans       &trans                   &trans                     &trans                   &trans                 &trans    &trans  &trans                     &trans                    &trans                       &trans                  &trans
-&kp K_SLEEP  &kp F1                   &kp F2                     &kp F3                   &kp F4                 &kp F5    &kp F6  &kp F7                     &kp F8                    &kp F9                       &kp F10                 &kp F11
-&kp K_LOCK   &mt LEFT_GUI K_PREVIOUS  &mt LEFT_ALT K_PLAY_PAUSE  &mt LEFT_CONTROL K_NEXT  &mt LEFT_SHIFT K_BACK  &none     &none   &mt RIGHT_SHIFT K_FORWARD  &mt RIGHT_CONTROL K_MUTE  &mt RIGHT_ALT C_VOLUME_DOWN  &mt RIGHT_GUI C_VOL_UP  &kp F12
-&trans       &trans                   &trans                     &trans                   &kp K_CALCULATOR       &trans    &trans  &trans                     &trans                    &trans                       &trans                  &trans
-                                                                 &trans                   &trans                 &trans    &trans  &trans
-                                                                                          &trans                 &trans    &trans
+&trans       &trans                   &trans                     &trans                   &trans                 &trans             &trans  &trans                     &trans                    &trans                       &trans                  &trans
+&kp K_SLEEP  &kp F1                   &kp F2                     &kp F3                   &kp F4                 &kp F5             &kp F6  &kp F7                     &kp F8                    &kp F9                       &kp F10                 &kp F11
+&kp K_LOCK   &mt LEFT_GUI K_PREVIOUS  &mt LEFT_ALT K_PLAY_PAUSE  &mt LEFT_CONTROL K_NEXT  &mt LEFT_SHIFT K_BACK  &none              &none   &mt RIGHT_SHIFT K_FORWARD  &mt RIGHT_CONTROL K_MUTE  &mt RIGHT_ALT C_VOLUME_DOWN  &mt RIGHT_GUI C_VOL_UP  &kp F12
+&trans       &trans                   &trans                     &trans                   &kp K_CALCULATOR       &trans             &trans  &trans                     &trans                    &trans                       &trans                  &trans
+                                                                 &trans                   &sl_paren_open         &sl_paren_close    &trans  &trans
+                                                                                          &trans                 &trans             &trans
             >;
         };
 
