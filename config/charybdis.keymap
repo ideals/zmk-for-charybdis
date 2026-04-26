@@ -25,14 +25,14 @@
             label = "LEFT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SCROLLLOCK &kp LPAR>; // LPAR это Shift+9
+            bindings = <&kp SCROLLLOCK &kp LS(COMMA) &kp LS(COMMA)>; // Shift + Comma (запятая)
         };
 
         sl_paren_close: sl_paren_close {
             label = "RIGHT_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SCROLLLOCK &kp RPAR>; // RPAR это Shift+0
+            bindings = <&kp SCROLLLOCK &kp LS(DOT) &kp LS(DOT)>; // Shift + Dot (точка)
         };
     };
 
